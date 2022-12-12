@@ -41,3 +41,34 @@ dlyaProbelov = " "*(60 - len(dlyzLena) - 1) + "|"
 print(dlyzLena + dlyaProbelov)
 
 print("+" + "-"*58 + "+")
+
+
+
+
+С ФУНКЦИЯМИ
+
+def printOneStr(leftPart, parametr, comment):
+
+    forTemperature = "| " + leftPart + ' '
+
+
+    dlyzLena = forTemperature + parametr + " " + comment
+    dlyaProbelov = " "*(60 - len(dlyzLena) - 1) + "|"
+
+    print(dlyzLena + dlyaProbelov)
+
+
+
+
+
+temp = input("Введите температуру ")
+
+print("+" + "-"*58 + "+") 
+
+
+printOneStr("Температура", temp, "Гр Ц")
+printOneStr("Влажность", "15", "%")
+printOneStr("Я", "Люблю", "Аниме")
+
+print("+" + "-"*58 + "+")
+
