@@ -72,3 +72,31 @@ printOneStr("Я", "Люблю", "Аниме")
 
 print("+" + "-"*58 + "+")
 
+
+
+_____________________________________________________________________________________________________________________________
+
+
+
+def summa3str(leftPart, middlePart, rightPart):
+    newLeftPart = '|' + leftPart + ' ' + middlePart + ' ' + rightPart
+    newRightPart = ' ' * (60 - len(newLeftPart) - 1) + '|'
+
+    print(newLeftPart + newRightPart)
+
+def printKrishka():
+    print('+' + '-'*58 + '+')
+
+
+vlashonost = input("Введите влажность: ")
+temperatura = input("Введите температуру :")
+veter = input('Введите скорость ветра: ')
+
+printKrishka()
+
+summa3str('Влажность', vlashonost, '%')
+summa3str('Температура', temperatura, 'градусов')
+summa3str('Скорость ветра', veter, 'км\с')
+
+printKrishka()
+
